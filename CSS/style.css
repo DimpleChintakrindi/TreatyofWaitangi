@@ -1,0 +1,115 @@
+#wrapper {
+    display: grid;
+     grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:"header header header"
+                         "nav nav nav"
+                    "main main main"
+        "images images images"
+        "footer footer footer";
+}
+
+
+
+div{
+     border: 1px solid black;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+  
+li{
+    display: inline;
+    float:left;
+}
+
+a{
+    display:block;
+    Padding:8px;
+     background-color:lightskyblue;
+    color: white;
+    
+    
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+}
+
+
+
+#header{
+    grid-area: header;
+       background-color: navy;
+    color: whitesmoke;
+      text-align: center;
+    padding-top: 50px;
+padding-bottom:50px;
+    text-decoration: underline;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: navy;
+}
+
+#nav{
+    grid-area: nav;
+     background-color: navy;
+    color: whitesmoke;
+   padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+   
+}
+
+#main{
+    grid-area: main;
+     text-align:left;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+
+#images{
+    grid-area: images;
+      
+}
+
+img{
+    border-radius: 30px;
+}
+
+
+#footer{
+    grid-area: footer;
+        background-color: skyblue;
+    color: whitesmoke;
+    font-size: 30px;
+        text-align: center;
+    padding-top: 50px;
+padding-bottom:50px;
+     text-decoration: underline;
+   
+   
+}
+
+body{
+    background-color: azure;
+}
